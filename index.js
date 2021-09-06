@@ -17,4 +17,6 @@ router.get('/posts', (req, res) => {
     res.json(posts);
 });
 
+app.use(router);
+
 app.listen(3000);
