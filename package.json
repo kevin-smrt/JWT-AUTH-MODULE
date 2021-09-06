@@ -1,0 +1,24 @@
+{
+  "name": "jwt-auth-module",
+  "version": "1.0.0",
+  "description": "## 🎯 But du projet Créer un module d'authentification utilisant les JSON web tokens. Gérer ce que les utilisateurs peuvent faire selon leur identification. Comprendre le fonctionement des JWT.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevin-smrt/JWT-AUTH-MODULE.git"
+  },
+  "author": "kevin-smrt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevin-smrt/JWT-AUTH-MODULE/issues"
+  },
+  "homepage": "https://github.com/kevin-smrt/JWT-AUTH-MODULE#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
