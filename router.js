@@ -1,5 +1,8 @@
+require('dotenv').config();
+
 const router = require('express').Router();
 const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
 
 const users = [];
 
@@ -30,6 +33,8 @@ router.post('/users/login', async (req, res) => {
     }
     try {
         if (await bcrypt.compare(req.body.password, user.password)) {
+            const accessToken = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET);
+            user.token = accessToken;
             res.send('Success');
         } else {
             res.send('Wrong password');
