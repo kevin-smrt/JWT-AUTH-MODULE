@@ -17,7 +17,7 @@ Ce fichier doit contenir 3 routes :
 | Méthode | Route | Utilité |
 |-------|---------|---------|
 | GET | /users | ne sera accessible qu'à une personne qui dispose d'un token (`JWT`) |
-| POST | /users | enregistre une utilisateur |
+| POST | /users | enregistre un utilisateur |
 | POST | /users/login | permet de se connecter et de posséder un JWT |
 
 Pour finir, créer un middleware pour la route GET `/users` qui vérifie si le token de l'utilisateur est valide.
